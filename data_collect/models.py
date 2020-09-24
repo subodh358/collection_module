@@ -1,0 +1,30 @@
+from django.db import models
+
+# Create your models here.
+
+class Book(models.Model):
+    ofp_plan_date = models.DateField(null=True, blank=False)
+    f_in_date = models.DateField(null=True, blank=False)
+    f_out_date = models.DateField(null=True, blank=False)
+    invoice = models.CharField(max_length=100, null=True, blank=False)
+    t_qty = models.IntegerField(null=True, blank=False)
+    a_qty = models.IntegerField(null=True, blank=False)
+    a_part = models.CharField(max_length=100, null=True, blank=False)
+    rfid_seal = models.CharField(max_length=100, null=True, blank=False)
+    container_no = models.CharField(max_length=100, null=True, blank=False)
+    seal_no = models.IntegerField(null=True, blank=False)
+    lr_no = models.IntegerField(null=True, blank=False)
+    vehicle_no = models.CharField(max_length=100, null=True, blank=False)
+    s_line = models.CharField(max_length=100, null=True, blank=False)
+    clearance = models.CharField(max_length=100, null=True, blank=False)
+    destination = models.CharField(max_length=100, null=True, blank=False)
+    port = models.CharField(max_length=100, null=True, blank=False)
+    f_dest = models.CharField(max_length=100, null=True, blank=False)
+    product = models.CharField(max_length=100, null=True, blank=False)
+    booking_no = models.IntegerField(null=True, blank=False)
+    transporter = models.CharField(max_length=100,null=True, blank=False)
+    cont_size = models.CharField(max_length=100,null=True, blank=False)
+    detn_days = models.IntegerField(null=True, blank=False)
+    detain_reason = models.CharField(max_length=100, null=True, blank=False)
+    mobile_no = models.CharField(max_length=100, null=True, blank=False)
+    remarks = models.CharField(max_length=100, null=True, blank=False)
